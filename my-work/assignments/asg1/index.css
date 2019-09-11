@@ -1,0 +1,21 @@
+#area {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    align-content:space-around;
+    flex-wrap: wrap;
+}
+
+#control {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    background-color: palegreen;
+}
