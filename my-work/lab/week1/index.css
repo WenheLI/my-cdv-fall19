@@ -1,0 +1,13 @@
+.bar {
+    height: 100px;
+    margin: 10;
+    background-color: cornflowerblue;
+    text-align: center;
+    color: aliceblue;
+}
+
+#display {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
