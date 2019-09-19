@@ -5,4 +5,4 @@
 
 - TikTok or other short video recommendation apps. These apps will push new videos that users might like. And the fact is, the more you watch, the more accurate the App can do.
 
-- Input methods. They will predict the words that we want to type ahead of time.
+- Input methods. They will predict the words that we want to type ahead of time. Like the gmail, while we are composing an email, the gmail App will give a set of word choices.
