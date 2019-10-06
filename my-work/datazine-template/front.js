@@ -67,7 +67,7 @@ const task = async () => {
         .text("Hours spent on different video platforms");
 
     const pieChart = viz.append('g')
-                        .attr('transform', 'translate(900, 350)')
+                        .attr('transform', 'translate(800, 350)')
                         .attr('class', 'pieChart');
     
     const radius =  250;
@@ -111,7 +111,7 @@ const task = async () => {
             .enter()
             .append('text')
                 .text((d, i) => {
-                    if (i === 3) return 'Other'
+                    if (i === 3) return 'Other activities'
                     if (i === 0) return 'Youtube';
                     else if (i === 1) return 'Bilibili';
                     else if (i === 2) return 'Tencent';
