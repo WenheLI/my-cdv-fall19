@@ -74,17 +74,56 @@ const task = async () => {
 
     const pieFunc = d3.pie()
                         .value((d) => d.value);
-    console.log([...timeDevoted, 60*60*24*30 - timeDevoted.reduce((a, b) => a + b, 0)])
+
     const pieData = pieFunc(d3.entries([...timeDevoted, 60*60*24*30 - timeDevoted.reduce((a, b) => a + b, 0)]));
+    pieArcs = d3.arc().innerRadius(radius*.5).outerRadius(radius*.8);
+    labelArcs = d3.arc().innerRadius(radius*.9).outerRadius(radius*.9);
     pieChart.selectAll('path')
             .data(pieData)
             .enter()
             .append('path')
-            .attr('d', d3.arc().innerRadius(0).outerRadius(radius))
+            .attr('d', pieArcs)
+            .attr("stroke", "white")
+            .style("stroke-width", "2px")
             .attr('fill', (d, i) => {
                 if (i === 3) return '#223344'
                 return colorMap[i]
-            })
+            });
+    pieChart.selectAll('polyline')
+            .data(pieData)
+            .enter()
+            .append('polyline')
+                .style('fill', 'none')
+                .attr('stroke', 'black')
+                .attr('stroke-width', 1)
+                .attr('points', (d, i) => {
+                    let posA = pieArcs.centroid(d);
+                    let posB = labelArcs.centroid(d);
+                    let posC = labelArcs.centroid(d);
+
+                    let midAngle = (d.startAngle + d.endAngle) / 2;
+                    if (i === 2) posC[0] = radius * .5;
+                    else posC[0] = radius * .95 * (midAngle <= Math.PI ? 1 : -1);
+                    return [posA, posB, posC];
+                });
+    pieChart.selectAll('.label')
+            .data(pieData)
+            .enter()
+            .append('text')
+                .text((d, i) => {
+                    if (i === 3) return 'Other'
+                    if (i === 0) return 'Youtube';
+                    else if (i === 1) return 'Bilibili';
+                    else if (i === 2) return 'Tencent';
+                })
+                .attr('transform', (d, i) => {
+                    const pos = labelArcs.centroid(d);
+                    let midAngle = (d.startAngle + d.endAngle) / 2;
+                    if (i === 2) pos[0] = radius * .5;
+                    else pos[0] = radius * .95 * (midAngle <= Math.PI ? 1 : -1);
+                    return `translate(${pos})`
+                })
+                .attr('class', 'label');
 }
 
 task();
