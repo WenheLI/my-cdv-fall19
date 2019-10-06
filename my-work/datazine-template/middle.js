@@ -51,7 +51,7 @@ const task = async () => {
     const videoDuration = data.map((it) => it.duration);
     const minDuration = Math.min(...videoDuration);
     const maxDuration = Math.max(...videoDuration);
-    console.log(maxDuration)
+
     const rScale = d3.scaleLinear().range([3, 25]).domain([minDuration, maxDuration]);
     scatterChart.selectAll('circle')
                 .data(data)
