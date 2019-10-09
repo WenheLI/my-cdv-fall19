@@ -7,6 +7,43 @@
 
     <!-- Please leave this following line here -->
     <script type="text/javascript" src="setup/setup.js"></script>
+    <style>
+      #text {
+        max-width: 200px;
+        padding-left: 10px;
+        padding-top: 200px;
+      }
+      .color-div {
+        width: 10px;
+        height: 10px;
+      }
+
+      .red {
+        background-color: #c4302b;
+      }
+
+      .blue {
+        background-color: #73c9e5;
+      }
+      .green {
+        background-color: #86BA00;
+      }
+
+      .gray {
+        background-color: gray;
+      }
+      .group {
+        display: flex;
+        flex-direction: row;
+      }
+      .group div {
+        margin-top: 24px;
+        margin-right: 10px;
+      }
+      .group p {
+        
+      }
+    </style>
 
   </head>
   <body>
@@ -14,8 +51,23 @@
 
     <!-- everything you create should be in the following container -->
     <!-- Use D3 to place your svg(s) in it, too -->
-    <div id="container">
+    <div id="container" style="display: flex; flex-direction: row-reverse">
+      <div id="text">
+          <p>This is a 3 Weeks hour matrix (Each Square represents one hour)</p>
+          <div class="group">
+              <div class="color-div red"></div> <p>Youtube</p>
+          </div>
+          <div class="group">
+              <div class="color-div blue"></div> <p>Bilibili</p>
+          </div>
+          <div class="group">
+              <div class="color-div green"></div> <p>Tencent</p>
+          </div>
 
+          <div class="group">
+              <div class="color-div gray"></div> <p>Other</p>
+          </div>
+      </div>
 
     </div>
     <script src="./back.js"></script>

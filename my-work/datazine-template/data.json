@@ -227,6 +227,7 @@
     "title": "Was RTX a big scam? – Performance & image quality analysis",
     "desc": "",
     "platform": "Youtube",
+    "tag": "game",
     "duration": 551,
     "tag": "tech",
     "owner": "Linus Tech Tips",
@@ -235,6 +236,7 @@
 }, {
     "title": "[Fix] Fastboot Mode Waiting for Device",
     "desc": "",
+    "tag": "phone",
     "platform": "Youtube",
     "duration": 109,
     "owner": "OnePlus Exclusive",
@@ -244,6 +246,7 @@
     "title": "1.1: fetch() - Working With Data & APIs in JavaScript",
     "desc": "",
     "platform": "Youtube",
+    "tag": "tech",
     "duration": 939,
     "owner": "The Coding Train",
     "time": "2019-01-28T16:19:16.002Z",
@@ -251,6 +254,7 @@
 }, {
     "title": "iOS 12 Explained",
     "desc": "",
+    "tag": "phone",
     "platform": "Youtube",
     "duration": 358,
     "owner": "Techquickie",
@@ -259,6 +263,7 @@
 }, {
     "title": "小米路由器全系列安装shadowsocks教程",
     "desc": "",
+    "tag": "phone",
     "platform": "Youtube",
     "duration": 419,
     "owner": "Windy Zhou",
@@ -267,6 +272,7 @@
 }, {
     "title": "First Person View RC Car Racing!!",
     "desc": "",
+    "tag": "game",
     "platform": "Youtube",
     "duration": 848,
     "owner": "Linus Tech Tips",
@@ -381,6 +387,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 2780,
+    "tag": "education",
     "owner": "The Coding Train",
     "time": "2019-08-20T07:06:16.017Z",
     "device": "desktop"
@@ -389,6 +396,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 2048,
+    "tag": "education",
     "owner": "Nick Gregory",
     "time": "2019-09-10T12:51:24.831Z",
     "device": "desktop"
@@ -398,12 +406,14 @@
     "platform": "Youtube",
     "duration": 550,
     "owner": "Nick Gregory",
+    "tag": "education",
     "time": "2019-06-01T16:20:41.897Z",
     "device": "desktop"
 }, {
     "title": "Protostar heap3 - Doug Lea Malloc's dlmalloc unlinking",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 2425,
     "owner": "kgbuquerin",
     "time": "2019-04-07T10:08:46.392Z",
@@ -414,12 +424,14 @@
     "platform": "Youtube",
     "duration": 912,
     "owner": "LiveOverflow",
+    "tag": "education",
     "time": "2019-03-17T07:34:28.151Z",
     "device": "desktop"
 }, {
     "title": "The Heap: How to exploit a Heap Overflow - bin 0x15",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 731,
     "owner": "LiveOverflow",
     "time": "2019-08-02T04:57:15.636Z",
@@ -427,6 +439,7 @@
 }, {
     "title": "Heap Exploitation - Safe Unlink Explanation",
     "desc": "",
+    "tag": "education",
     "platform": "Youtube",
     "duration": 85,
     "owner": "Tsvetelin Choranov",
@@ -437,6 +450,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 633,
+    "tag": "education",
     "owner": "LiveOverflow",
     "time": "2019-08-26T17:33:00.975Z",
     "device": "desktop"
@@ -445,6 +459,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 1293,
+    "tag": "education",
     "owner": "Nick Gregory",
     "time": "2019-03-09T08:44:30.344Z",
     "device": "desktop"
@@ -453,6 +468,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 116,
+    "tag": "education",
     "owner": "Yufeng Zhao",
     "time": "2019-08-17T08:26:12.960Z",
     "device": "desktop"
@@ -460,17 +476,10 @@
     "title": "Air Hockey",
     "desc": "",
     "platform": "Youtube",
+    "tag": "game",
     "duration": 28,
     "owner": "Ada Zhao",
     "time": "2019-05-11T14:38:02.858Z",
-    "device": "desktop"
-}, {
-    "title": "Machine Learning 2018 Final",
-    "desc": "",
-    "platform": "Youtube",
-    "duration": 653,
-    "owner": "kagesawa masaki",
-    "time": "2019-03-13T14:56:49.478Z",
     "device": "desktop"
 }, {
     "title": "Live Stream #176: Simple 2D Black Hole Simulation and NeuroEvolution with TensorFlow.js",
@@ -478,6 +487,7 @@
     "platform": "Youtube",
     "duration": 215,
     "owner": "The Coding Train",
+    "tag": "education",
     "time": "2019-02-08T15:06:16.991Z",
     "device": "desktop"
 }, {
@@ -486,6 +496,7 @@
     "platform": "Youtube",
     "duration": 3176,
     "owner": "The Coding Train",
+    "tag": "education",
     "time": "2019-06-12T12:04:24.330Z",
     "device": "desktop"
 }, {
@@ -494,6 +505,7 @@
     "platform": "Youtube",
     "duration": 1595,
     "owner": "Nick Gregory",
+    "tag": "education",
     "time": "2019-08-25T10:24:52.126Z",
     "device": "desktop"
 }, {
@@ -501,6 +513,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 552,
+    "tag": "comedy",
     "owner": "粤语影视fans",
     "time": "2019-04-29T13:22:30.856Z",
     "device": "desktop"
@@ -508,6 +521,7 @@
     "title": "Windows folder animation",
     "desc": "",
     "platform": "Youtube",
+    "tag": "tech",
     "duration": 3,
     "owner": "nospacesWFT",
     "time": "2019-03-05T06:30:03.270Z",
@@ -516,6 +530,7 @@
     "title": "Holo Reader - a HackNYU Project - by ShangHolor",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 112,
     "owner": "Yufeng Zhao",
     "time": "2019-07-05T14:03:29.276Z",
@@ -524,6 +539,7 @@
     "title": "Format String Exploit and overwrite the Global Offset Table - bin 0x13",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 718,
     "owner": "LiveOverflow",
     "time": "2019-09-14T09:22:28.543Z",
@@ -532,14 +548,17 @@
     "title": "Dynamic Linking",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 2282,
     "owner": "Nick Gregory",
+    "tag": "game",
     "time": "2019-06-13T04:35:20.953Z",
     "device": "desktop"
 }, {
     "title": "Coding Challenge #56: Attraction and Repulsion Forces",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 2713,
     "owner": "The Coding Train",
     "time": "2019-06-01T04:31:59.103Z",
@@ -548,6 +567,7 @@
     "title": "2013 Day2P28 LoB: PLT & Dynamic Linking",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 542,
     "owner": "Open SecurityTraining",
     "time": "2019-09-13T11:42:34.767Z",
@@ -556,6 +576,7 @@
     "title": "Global Offset Table (GOT) and Procedure Linkage Table (PLT) - bin 0x12",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 418,
     "owner": "LiveOverflow",
     "time": "2019-01-03T13:02:12.248Z",
@@ -564,6 +585,7 @@
     "title": "Week 10 Homework Review, and the Heap",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 64,
     "owner": "Nick Gregory",
     "time": "2019-08-14T09:31:22.867Z",
@@ -572,6 +594,7 @@
     "title": "Week 6 & 7 Challenge Review",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 64,
     "owner": "Nick Gregory",
     "time": "2019-02-12T06:26:18.397Z",
@@ -581,6 +604,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 243,
+    "tag": "education",
     "owner": "Fall Out Boy",
     "time": "2019-01-11T03:44:19.074Z",
     "device": "desktop"
@@ -588,6 +612,7 @@
     "title": "17.11: Sound Visualization: Frequency Analysis with FFT - p5.js Sound Tutorial",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 1067,
     "owner": "The Coding Train",
     "time": "2019-07-17T13:41:36.645Z",
@@ -596,6 +621,7 @@
     "title": "shear",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 123,
     "owner": "Petrikov",
     "time": "2019-02-06T05:04:59.018Z",
@@ -605,6 +631,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 139,
+    "tag": "education",
     "owner": "Yufeng Zhao",
     "time": "2019-09-15T08:56:14.546Z",
     "device": "desktop"
@@ -612,6 +639,7 @@
     "title": "中兴当初为何被美国下达禁售令？回顾令人无语的中兴事件【科技杂谈46】",
     "desc": "",
     "platform": "Youtube",
+    "tag": "tech",
     "duration": 1237,
     "owner": "红酒汤姆一世",
     "time": "2019-07-11T17:31:01.944Z",
@@ -620,6 +648,7 @@
     "title": "CPU Cooling with BOILING LIQUID 🔥🔥",
     "desc": "",
     "platform": "Youtube",
+    "tag": "tech",
     "duration": 923,
     "owner": "Linus Tech Tips",
     "time": "2019-10-01T15:30:19.133Z",
@@ -627,6 +656,7 @@
 }, {
     "title": "Coding Challenge #100.1: Neuroevolution Flappy Bird - Part 1",
     "desc": "",
+    "tag": "education",
     "platform": "Youtube",
     "duration": 1433,
     "owner": "The Coding Train",
@@ -635,6 +665,7 @@
 }, {
     "title": "Coding Challenge #139: Calculating Digits of Pi with Collisions",
     "desc": "",
+    "tag": "education",
     "platform": "Youtube",
     "duration": 1902,
     "owner": "The Coding Train",
@@ -644,6 +675,7 @@
     "title": "Autonomous Stream: 12 hours approximating 10 digits of Pi with the Mandelbrot Set",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 715,
     "owner": "The Coding Train",
     "time": "2019-02-26T14:13:40.644Z",
@@ -652,6 +684,7 @@
     "title": "Coding Challenge #11: 3D Terrain Generation with Perlin Noise in Processing",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 1364,
     "owner": "The Coding Train",
     "time": "2019-02-05T17:14:16.942Z",
@@ -659,6 +692,7 @@
 }, {
     "title": "Audio Visualizer (OpenFrameworks)",
     "desc": "",
+    "tag": "education",
     "platform": "Youtube",
     "duration": 191,
     "owner": "jahferh",
@@ -668,6 +702,7 @@
     "title": "Writing a simple Program in C - bin 0x02",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 747,
     "owner": "LiveOverflow",
     "time": "2019-08-15T12:23:42.666Z",
@@ -676,6 +711,7 @@
     "title": "faceosc sketch",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 39,
     "owner": "Yufeng Zhao",
     "time": "2019-09-26T10:33:02.735Z",
@@ -683,6 +719,7 @@
 }, {
     "title": "Live Stream #171: Time to put away the noise loops!",
     "desc": "",
+    "tag": "education",
     "platform": "Youtube",
     "duration": 160,
     "owner": "The Coding Train",
@@ -693,12 +730,14 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 86,
+    "tag": "education",
     "owner": "PC Prashant",
     "time": "2019-05-19T07:18:39.537Z",
     "device": "desktop"
 }, {
     "title": "keygen error.Cannot retrieve MAC address Win 8-10...",
     "desc": "",
+    "tag": "education",
     "platform": "Youtube",
     "duration": 67,
     "owner": "Алексей Кадиров",
@@ -709,6 +748,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 758,
+    "tag": "education",
     "owner": "The Coding Train",
     "time": "2019-07-14T05:05:21.383Z",
     "device": "desktop"
@@ -716,6 +756,7 @@
     "title": "6.1: Autonomous Agents and Steering - The Nature of Code",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 869,
     "owner": "The Coding Train",
     "time": "2019-05-13T15:59:40.664Z",
@@ -723,6 +764,7 @@
 }, {
     "title": "Coding Challenge #62.4: Plinko with Matter.js Part 4",
     "desc": "",
+    "tag": "education",
     "platform": "Youtube",
     "duration": 760,
     "owner": "The Coding Train",
@@ -732,6 +774,7 @@
     "title": "Coding Challenge #62.1: Plinko with Matter.js Part 1",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 1558,
     "owner": "The Coding Train",
     "time": "2019-05-26T12:13:55.923Z",
@@ -742,6 +785,7 @@
     "platform": "Youtube",
     "duration": 1343,
     "owner": "The Coding Train",
+    "tag": "education",
     "time": "2019-06-19T06:53:54.514Z",
     "device": "desktop"
 }, {
@@ -750,6 +794,7 @@
     "platform": "Youtube",
     "duration": 590,
     "owner": "The Coding Train",
+    "tag": "education",
     "time": "2019-10-03T05:54:07.977Z",
     "device": "desktop"
 }, {
@@ -757,12 +802,14 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 485,
+    "tag": "education",
     "owner": "The Coding Train",
     "time": "2019-04-17T16:28:51.310Z",
     "device": "desktop"
 }, {
     "title": "I.1: Random Walker - The Nature of Code",
     "desc": "",
+    "tag": "education",
     "platform": "Youtube",
     "duration": 566,
     "owner": "The Coding Train",
@@ -773,6 +820,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 1427,
+    "tag": "education",
     "owner": "The Coding Train",
     "time": "2019-08-14T04:12:27.297Z",
     "device": "desktop"
@@ -780,6 +828,7 @@
     "title": "Cinematography 2018-10-09",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 44,
     "owner": "Yufeng Zhao",
     "time": "2019-08-31T09:25:57.776Z",
@@ -789,6 +838,7 @@
     "desc": "",
     "platform": "Youtube",
     "tag": "tech",
+    "tag": "education",
     "duration": 620,
     "owner": "The Coding Train",
     "time": "2019-01-23T05:46:27.746Z",
@@ -807,6 +857,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 1585,
+    "tag": "education",
     "owner": "The Coding Train",
     "time": "2019-01-05T04:18:16.863Z",
     "device": "desktop"
@@ -824,6 +875,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 953,
+    "tag": "education",
     "owner": "The Coding Train",
     "time": "2019-08-12T15:40:08.227Z",
     "device": "desktop"
@@ -832,8 +884,8 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 192,
+    "tag": "education",
     "owner": "The Coding Train",
-    "tag": "tech",
     "time": "2019-04-02T12:00:14.407Z",
     "device": "desktop"
 }, {
@@ -841,12 +893,14 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 1807,
+    "tag": "tech",
     "owner": "Linus Tech Tips",
     "time": "2019-04-17T03:04:48.977Z",
     "device": "desktop"
 }, {
     "title": "Coding Challenge #134.2: Heart Curve GIF Loop",
     "desc": "",
+    "tag": "education",
     "platform": "Youtube",
     "duration": 502,
     "owner": "The Coding Train",
@@ -857,6 +911,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 922,
+    "tag": "education",
     "owner": "TechLead",
     "time": "2019-04-29T07:42:26.795Z",
     "device": "desktop"
@@ -865,6 +920,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 130,
+    "tag": "education",
     "owner": "Mark O'Sullivan",
     "time": "2019-07-24T05:02:32.432Z",
     "device": "desktop"
@@ -873,12 +929,14 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 1214,
+    "tag": "education",
     "owner": "The Coding Train",
     "time": "2019-07-14T15:06:08.557Z",
     "device": "desktop"
 }, {
     "title": "The Centrifuge Brain Project | A Short Film by Till Nowak",
     "desc": "",
+    "tag": "education",
     "platform": "Youtube",
     "duration": 396,
     "owner": "Kurzfilm Agentur Hamburg",
@@ -889,12 +947,14 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 840,
+    "tag": "tech",
     "owner": "Linus Tech Tips",
     "time": "2019-04-30T17:46:51.720Z",
     "device": "desktop"
 }, {
     "title": "Noise Cancelling Monitor? How Even?! - Aorus AD27QD Review",
     "desc": "",
+    "tag": "tech",
     "platform": "Youtube",
     "duration": 565,
     "owner": "Linus Tech Tips",
@@ -903,6 +963,7 @@
 }, {
     "title": "3.1: Introduction to Conditional Statements - p5.js Tutorial",
     "desc": "",
+    "tag": "education",
     "platform": "Youtube",
     "duration": 691,
     "owner": "The Coding Train",
@@ -912,6 +973,7 @@
     "title": "2.6: createGraphics() - p5.js Tutorial",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 412,
     "owner": "The Coding Train",
     "time": "2019-09-21T05:43:14.305Z",
@@ -920,6 +982,7 @@
     "title": "Command Injection Demo",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 267,
     "owner": "Nick Gregory",
     "time": "2019-03-17T15:35:18.425Z",
@@ -929,6 +992,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 62,
+    "tag": "education",
     "owner": "The Coding Train",
     "time": "2019-02-03T11:05:17.224Z",
     "device": "desktop"
@@ -937,6 +1001,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 183,
+    "tag": "education",
     "owner": "The Coding Train",
     "time": "2019-03-24T14:15:51.282Z",
     "device": "desktop"
@@ -944,6 +1009,7 @@
     "title": "The 200 Year Old Computer",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 316,
     "owner": "This Is",
     "time": "2019-03-18T14:05:37.813Z",
@@ -953,6 +1019,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 3271,
+    "tag": "education",
     "owner": "The Coding Train",
     "time": "2019-01-12T10:58:06.382Z",
     "device": "desktop"
@@ -969,7 +1036,8 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 5,
-    "owner": "MingoSan",
+    "owner": "game",
+    "tag": "education",
     "time": "2019-03-07T11:01:40.457Z",
     "device": "desktop"
 }, {
@@ -977,6 +1045,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 1081,
+    "tag": "tech",
     "owner": "Linus Tech Tips",
     "time": "2019-08-27T11:35:05.879Z",
     "device": "desktop"
@@ -984,6 +1053,7 @@
     "title": "Hacking Nvidia's Drivers!",
     "desc": "",
     "platform": "Youtube",
+    "tag": "tech",
     "duration": 983,
     "owner": "Linus Tech Tips",
     "time": "2019-05-16T10:57:35.413Z",
@@ -1001,12 +1071,14 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 320,
+    "tag": "tech",
     "owner": "Linus Tech Tips",
     "time": "2019-02-10T12:57:21.029Z",
     "device": "desktop"
 }, {
     "title": "WebGL Tutorial 2 - Shaders in 11 Minutes",
     "desc": "",
+    "tag": "education",
     "platform": "Youtube",
     "duration": 692,
     "owner": "JavaScript Teacher",
@@ -1015,6 +1087,7 @@
 }, {
     "title": "摘韭菜.rmvb",
     "desc": "",
+    "tag": "comedy",
     "platform": "Youtube",
     "duration": 537,
     "owner": "Jian Huang",
@@ -1025,6 +1098,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 431,
+    "tag": "education",
     "owner": "rahmat maulana",
     "time": "2019-03-21T10:02:34.579Z",
     "device": "desktop"
@@ -1034,12 +1108,14 @@
     "platform": "Youtube",
     "duration": 65,
     "owner": "Yufeng Zhao",
+    "tag": "game",
     "time": "2019-07-22T15:53:04.030Z",
     "device": "desktop"
 }, {
     "title": "Imprisoned 囚 - Interactive Performance",
     "desc": "",
     "platform": "Youtube",
+    "tag": "performance",
     "duration": 188,
     "owner": "Yufeng Zhao",
     "time": "2019-03-01T12:46:51.037Z",
@@ -1050,6 +1126,7 @@
     "platform": "Youtube",
     "duration": 450,
     "owner": "John Hammond",
+    "tag": "education",
     "time": "2019-05-28T10:00:00.232Z",
     "device": "desktop"
 }, {
@@ -1058,6 +1135,7 @@
     "platform": "Youtube",
     "duration": 11,
     "owner": "Ciro Santilli",
+    "tag": "education",
     "time": "2019-01-14T05:38:57.790Z",
     "device": "desktop"
 }, {
@@ -1066,6 +1144,7 @@
     "platform": "Youtube",
     "duration": 1166,
     "owner": "Linus Tech Tips",
+    "tag": "tech",
     "time": "2019-04-21T14:13:42.999Z",
     "device": "desktop"
 }, {
@@ -1073,28 +1152,23 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 1377,
+    "tag": "education",
     "owner": "The Coding Train",
     "time": "2019-04-15T10:33:12.632Z",
-    "device": "desktop"
-}, {
-    "title": "Taking My Date To Worst Reviewed Restaurant In My City (1 Star)",
-    "desc": "",
-    "platform": "Youtube",
-    "duration": 324,
-    "owner": "RiceGum",
-    "time": "2019-08-13T13:59:20.338Z",
     "device": "desktop"
 }, {
     "title": "This costs way less than you'd think",
     "desc": "",
     "platform": "Youtube",
     "duration": 521,
+    "tag": "tech",
     "owner": "Linus Tech Tips",
     "time": "2019-03-14T16:28:36.498Z",
     "device": "desktop"
 }, {
     "title": "Nvidia Said We Couldn't Game On This Crypto Mining Card...",
     "desc": "",
+    "tag": "tech",
     "platform": "Youtube",
     "duration": 998,
     "owner": "Linus Tech Tips",
@@ -1104,6 +1178,7 @@
     "title": "The Most Sensible Way to Kill the Notch - Nubia X",
     "desc": "",
     "platform": "Youtube",
+    "tag": "phone",
     "duration": 308,
     "owner": "Linus Tech Tips",
     "time": "2019-04-20T17:59:29.127Z",
@@ -1111,6 +1186,7 @@
 }, {
     "title": "The coolest hard drive tech in 20 years",
     "desc": "",
+    "tag": "tech",
     "platform": "Youtube",
     "duration": 391,
     "owner": "Linus Tech Tips",
@@ -1121,12 +1197,14 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 874,
+    "tag": "tech",
     "owner": "Linus Tech Tips",
     "time": "2019-03-12T17:28:29.701Z",
     "device": "desktop"
 }, {
     "title": "web2mpv intro",
     "desc": "",
+    "tag": "education",
     "platform": "Youtube",
     "duration": 94,
     "owner": "Zhang Alex",
@@ -1136,6 +1214,7 @@
     "title": "Is NVLink BETTER than SLI??",
     "desc": "",
     "platform": "Youtube",
+    "tag": "tech",
     "duration": 656,
     "owner": "Linus Tech Tips",
     "time": "2019-01-09T16:53:17.487Z",
@@ -1144,6 +1223,7 @@
     "title": "nVidia’s FIRST SLI Gaming Setup! - RECONSTRUCTED",
     "desc": "",
     "platform": "Youtube",
+    "tag": "tech",
     "duration": 658,
     "owner": "Linus Tech Tips",
     "time": "2019-09-16T05:59:26.586Z",
@@ -1153,6 +1233,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 685,
+    "tag": "tech",
     "owner": "Linus Tech Tips",
     "time": "2019-01-08T17:48:21.502Z",
     "device": "desktop"
@@ -1161,6 +1242,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 624,
+    "tag": "tech",
     "owner": "Linus Tech Tips",
     "time": "2019-02-16T08:46:13.030Z",
     "device": "desktop"
@@ -1168,6 +1250,7 @@
     "title": "Sorry, Apple.. \"The Notch\" is DEAD!",
     "desc": "",
     "platform": "Youtube",
+    "tag": "phone",
     "duration": 665,
     "owner": "Linus Tech Tips",
     "time": "2019-01-25T04:51:12.244Z",
@@ -1184,6 +1267,7 @@
     "title": "Accelerated Mobile Pages (Google AMP) Explained",
     "desc": "",
     "platform": "Youtube",
+    "tag": "tech",
     "duration": 240,
     "owner": "Techquickie",
     "time": "2019-08-14T16:40:45.095Z",
@@ -1194,6 +1278,7 @@
     "platform": "Youtube",
     "duration": 623,
     "owner": "gameranx",
+    "tag": "tech",
     "time": "2019-07-12T17:46:07.073Z",
     "device": "desktop"
 }, {
@@ -1203,11 +1288,13 @@
     "duration": 704,
     "owner": "Chad & Sarah Nelson",
     "time": "2019-02-02T17:53:07.411Z",
+    "tag": "tech",
     "device": "desktop"
 }, {
     "title": "How to Install Kraken X62 for Intel CPUs",
     "desc": "",
     "platform": "Youtube",
+    "tag": "tech",
     "duration": 625,
     "owner": "Largekhosro",
     "time": "2019-06-02T08:02:17.810Z",
@@ -1216,6 +1303,7 @@
     "title": "Installing the NZXT Kraken X62 All in one Water cooler in S340 Elite case.",
     "desc": "",
     "platform": "Youtube",
+    "tag": "tech",
     "duration": 314,
     "owner": "MrGarfi",
     "time": "2019-09-08T11:20:27.616Z",
@@ -1224,6 +1312,7 @@
     "title": "NZXT X62 Review and Usage Guide",
     "desc": "",
     "platform": "Youtube",
+    "tag": "tech",
     "duration": 1458,
     "owner": "OC3D TV",
     "time": "2019-09-28T09:39:07.670Z",
@@ -1234,6 +1323,7 @@
     "platform": "Youtube",
     "duration": 91,
     "owner": "NZXT",
+    "tag": "tech",
     "time": "2019-03-22T08:24:57.723Z",
     "device": "desktop"
 }, {
@@ -1242,6 +1332,7 @@
     "platform": "Youtube",
     "duration": 418,
     "owner": "Lin Yen-Chen",
+    "tag": "education",
     "time": "2019-03-17T03:57:47.667Z",
     "device": "desktop"
 }, {
@@ -1249,6 +1340,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 261,
+    "tag": "vr",
     "owner": "3D-VR-360 VIDEOS",
     "time": "2019-04-04T09:03:29.231Z",
     "device": "desktop"
@@ -1256,6 +1348,7 @@
     "title": "心花路放 Breakup Buddies (2014)",
     "desc": "",
     "platform": "Youtube",
+    "tag": "performance",
     "duration": 168,
     "owner": "Chinese MovieTrailers",
     "time": "2019-09-10T09:54:20.440Z",
@@ -1265,6 +1358,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 637,
+    "tag": "tech",
     "owner": "Linus Tech Tips",
     "time": "2019-03-11T07:29:37.474Z",
     "device": "desktop"
@@ -1274,6 +1368,7 @@
     "platform": "Youtube",
     "duration": 448,
     "owner": "Linus Tech Tips",
+    "tag": "tech",
     "time": "2019-06-14T13:15:18.657Z",
     "device": "desktop"
 }, {
@@ -1281,6 +1376,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 1096,
+    "tag": "tech",
     "owner": "Linus Tech Tips",
     "time": "2019-03-13T07:25:09.371Z",
     "device": "desktop"
@@ -1289,6 +1385,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 637,
+    "tag": "tech",
     "owner": "Linus Tech Tips",
     "time": "2019-08-16T16:58:28.380Z",
     "device": "desktop"
@@ -1296,6 +1393,7 @@
     "title": "Houdini Compositor Worklet for transitions",
     "desc": "",
     "platform": "Youtube",
+    "tag": "education",
     "duration": 16,
     "owner": "Surma",
     "time": "2019-08-16T07:22:47.494Z",
@@ -1338,6 +1436,7 @@
     "platform": "Youtube",
     "duration": 746,
     "owner": "The Coding Train",
+    "tag": "education",
     "time": "2019-07-30T10:33:14.955Z",
     "device": "desktop"
 }, {
@@ -1345,6 +1444,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 534,
+    "tag": "tech",
     "owner": "TechLinked",
     "time": "2019-05-13T09:31:11.138Z",
     "device": "desktop"
@@ -1352,6 +1452,7 @@
     "title": "EDGE IS DEAD!",
     "desc": "",
     "platform": "Youtube",
+    "tag": "tech",
     "duration": 415,
     "owner": "TechLinked",
     "time": "2019-01-06T15:52:26.217Z",
@@ -1359,6 +1460,7 @@
 }, {
     "title": "Duet Display app does not work with windows 10 home 64 bits",
     "desc": "",
+    "tag": "tech",
     "platform": "Youtube",
     "duration": 59,
     "owner": "Claudio Gutierrez",
@@ -1369,6 +1471,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 119,
+    "tag": "tech",
     "owner": "FuryySnipe",
     "time": "2019-07-05T09:28:44.222Z",
     "device": "desktop"
@@ -1378,6 +1481,7 @@
     "platform": "Youtube",
     "duration": 171,
     "owner": "Google Developers",
+    "tag": "tech",
     "time": "2019-04-05T11:27:12.801Z",
     "device": "desktop"
 }, {
@@ -1385,6 +1489,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 240,
+    "tag": "performance",
     "owner": "Yufeng Zhao",
     "time": "2019-06-13T08:21:04.890Z",
     "device": "desktop"
@@ -1393,6 +1498,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 116,
+    "tag": "performance",
     "owner": "Yufeng Zhao",
     "time": "2019-08-21T17:55:20.328Z",
     "device": "desktop"
@@ -1402,6 +1508,7 @@
     "platform": "Youtube",
     "duration": 78,
     "owner": "Yufeng Zhao",
+    "tag": "performance",
     "time": "2019-08-12T16:04:26.025Z",
     "device": "desktop"
 }, {
@@ -1434,6 +1541,7 @@
     "platform": "Youtube",
     "duration": 79,
     "owner": "jsimp1234",
+    "tag": "performance",
     "time": "2019-08-27T09:17:39.046Z",
     "device": "desktop"
 }, {
@@ -1441,6 +1549,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 115,
+    "tag": "trialer",
     "owner": "Rocket Girls",
     "time": "2019-04-09T15:45:28.913Z",
     "device": "desktop"
@@ -1449,12 +1558,14 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 10,
+    "tag": "performance",
     "owner": "Tong Li",
     "time": "2019-03-07T17:40:27.324Z",
     "device": "desktop"
 }, {
     "title": "七情 (qi qing): An Interactive Performance by Jiwon Shin",
     "desc": "",
+    "tag": "performance",
     "platform": "Youtube",
     "duration": 2070,
     "owner": "Jiwon Shin",
@@ -1466,6 +1577,7 @@
     "platform": "Youtube",
     "duration": 85,
     "owner": "Jiwon Shin",
+    "tag": "performance",
     "time": "2019-08-08T16:31:26.479Z",
     "device": "desktop"
 }, {
@@ -1474,6 +1586,7 @@
     "platform": "Youtube",
     "duration": 372,
     "owner": "Jiwon Shin",
+    "tag": "performance",
     "time": "2019-04-11T10:24:41.879Z",
     "device": "desktop"
 }, {
@@ -1482,6 +1595,7 @@
     "platform": "Youtube",
     "duration": 117,
     "owner": "Jiwon Shin",
+    "tag": "performance",
     "time": "2019-09-04T15:24:08.647Z",
     "device": "desktop"
 }, {
@@ -1489,6 +1603,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 1262,
+    "tag": "movie",
     "owner": "BBS JUJU",
     "time": "2019-10-04T09:16:01.425Z",
     "device": "desktop"
@@ -1496,6 +1611,7 @@
     "title": "JPN 1130D 世界奇妙物語 25週年春之特別篇 Yonimo Kimyouna Monogatari 2015 Spring SP",
     "desc": "",
     "platform": "Youtube",
+    "tag": "trailer",
     "duration": 30,
     "owner": "Nam Nams",
     "time": "2019-05-07T17:00:02.250Z",
@@ -1505,6 +1621,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 913,
+    "tag": "movie",
     "owner": "Babykh Chow",
     "time": "2019-08-23T15:56:19.289Z",
     "device": "desktop"
@@ -1513,6 +1630,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 894,
+    "tag": "education",
     "owner": "The Coding Train",
     "time": "2019-08-17T17:01:20.768Z",
     "device": "desktop"
@@ -1521,6 +1639,7 @@
     "desc": "",
     "platform": "Youtube",
     "duration": 975,
+    "tag": "education",
     "owner": "The Coding Train",
     "time": "2019-04-25T04:12:04.333Z",
     "device": "desktop"
@@ -1555,7 +1674,7 @@
     "title": "我觉得大众是不是放弃竞争了？",
     "platform": "Bilibili"
 }, {
-    "tag": "remix-themed content",
+    "tag": "remix",
     "duration": 144,
     "owner": "律动喵喵",
     "desc": "喵喵~\n使用素材：av63676281 av62609323 av49330021\n突然脑子里冒出的想法（\n就立刻做出来了qwq还是做鬼畜少了，，就这么点东西做了喵喵俩小时（\n还是希望大家喜欢吧ww喜欢一定要素质三连哦qwq\n以上。",
@@ -1565,7 +1684,7 @@
     "title": "累 计 铳 满 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊 啊",
     "platform": "Bilibili"
 }, {
-    "tag": "boardgame",
+    "tag": "game",
     "duration": 913,
     "owner": "杆菌无敌",
     "desc": "开局别家自摸了役满？不用怕，把他的32000拿过来就是了！好好笔记~这就是杆流！杆菌の日麻交流群：530828005 暗号246",
@@ -2305,7 +2424,7 @@
     "title": "男子误入传销，干啥啥不行吃啥啥不剩，头目都无奈了：求求你走吧",
     "platform": "Bilibili"
 }, {
-    "tag": "boardgame",
+    "tag": "game",
     "duration": 253,
     "owner": "晓冈丶",
     "desc": "【寅子剧场】番外\n中国象棋,马走田象走日,介谁不会？\n寅子斗鱼直播间：71415",

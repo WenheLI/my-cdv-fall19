@@ -7,7 +7,7 @@ const viz = d3.select('#container')
 const taskSecond = async () => {
     let data = await d3.json('data.json');
     data = data.filter((d) => {
-        if (d.platform !== 'Bilibili') return true;
+        if (d.platform !== 'Bilitencent') return true;
         else if (d.progress === -1 || d.progress ) return true;
         return false;
     });
@@ -20,7 +20,6 @@ const taskSecond = async () => {
         d.printedTime = `${date.getHours()} : ${date.getMinutes()}`;
         return d;
     });
-
     const tags = {};
     const newTags = {'other': 0};
     const colorMap = ['#c4302b', '#73c9e5', '#86BA00']
@@ -44,64 +43,192 @@ const taskSecond = async () => {
                     .domain(Object.keys(newTags));
     let yAxis = d3.axisLeft(yScale);
     
-    data = data.map((it) => {
-        let newIt = {};
-        newIt.time = it.hour;
-        newIt.tag = newTags[it.tag] ? it.tag : 'other';
-        newIt.platform = it.platform;
-        return newIt
-    });
+    const getTags = (it) => {
+        return it.tag ? it.tag : 'other';
+    }
+
+    const countTags = (prev, curr) => {
+        if (!prev[curr]) prev[curr] = 1;
+        else prev[curr] += 1;
+        prev.total += 1;
+        return prev;
+    }
 
     const youtubeData = data.filter((it) => it.platform === 'Youtube')
     const biliData = data.filter((it) => it.platform === 'Bilibili')
     const tencentData = data.filter((it) => it.platform === 'Tencent')
 
+    let biliTags = biliData.map(getTags).reduce(countTags, {total: 0});
+    let youtubeTags = youtubeData.map(getTags).reduce(countTags, {total: 0});
+    let tencentTags = tencentData.map(getTags).reduce(countTags, {total: 0});
+    delete youtubeTags['total'];
 
-    viz.append('g')
-        .attr('transform', 'translate(' + 80 + ',' + 0 + ')')
-        .call(yAxis);
-    viz.append('g')
-        .attr('transform', 'translate(' + 0 + ',' + 760 + ')')
-        .call(xAxis);
+    const youtubeValues = Object.keys(youtubeTags).map((it) => youtubeTags[it])
+    console.log(youtubeValues)
+    const youtubeScale = d3.scaleLinear().domain([0, Math.max(...youtubeValues)]).range([100, 500]);
 
-    viz.selectAll('.bilibili')
-    .data(biliData)
-    .enter()
-    .append('rect')
-    .attr('class', 'bilibili')
-    .attr('x', (d) => xScale(d.time))
-    .attr('y', (d) => yScale(d.tag))
-    .attr('width', (2320-80)/24)
-    .attr('height', yScale.bandwidth())
-    .attr('opacity', .3)
-    .style('fill', colorMap[1])
+    const chart = viz.append('g')
+                    .attr('class', 'chart');
 
-    viz.selectAll('.youtube')
-        .data(youtubeData)
-        .enter()
-        .append('rect')
-        .attr('class', 'youtube')
-        .attr('x', (d) => xScale(d.time))
-        .attr('y', (d) => yScale(d.tag))
-        .attr('width', (2320-80)/24)
-        .attr('height', yScale.bandwidth())
-        .attr('opacity', .3)
-        .style('fill', colorMap[0])
+    const youtubeChart = chart.append('g')
+                                .attr('class', 'youtube');
 
+    youtubeChart.append('svg:image')
+                .attr('height', 100)
+                .attr('width', 200)
+                .attr('y', 100)
+                .attr('x', 25)
+                .attr('xlink:href', './assets/youtube.png')
     
+    const padding = 20;
+    const youtubeX = Object.keys(youtubeTags).reduce((prev, curr) => {
+        let temp = youtubeScale(youtubeTags[curr]);
+        if (prev) temp += prev[prev.length - 1];
+        prev.push(temp);
+        return prev
+    }, [0])
+    console.log(youtubeX)
+    youtubeChart.selectAll('rect')
+                    .data(d3.entries(youtubeTags))
+                    .enter()
+                    .append('rect')
+                        .attr('x', (d, i) => {
+                           return 250 + youtubeX[i] + padding*i
+                        })
+                        .attr('y', 50)
+                        .attr('width', (d) => {
+                            const w = youtubeScale(d.value);
+                            return w;
+                        })
+                        .attr('height', 200)
+                        .style('fill', colorMap[0])
+    
+    youtubeChart.selectAll('text')
+                    .data(d3.entries(youtubeTags))
+                    .enter()
+                    .append('text')
+                        .attr('x', (d, i) => {
+                            if (d.key === 'movie cut') return 250 + youtubeX[i] + padding*i + 20;
+                            else if (d.key === 'education' || d.key === 'tech') return 250 + youtubeX[i] + padding*i + Math.floor(youtubeScale(d.value) / 3);
+                            else if (d.key !== 'performance') return 250 + youtubeX[i] + padding*i + Math.floor(youtubeScale(d.value) / 3);
+                            else return 250 + youtubeX[i] + padding*i + 3.5
+                        })
+                        .attr('y', 150)
+                        .style('fill', 'white')
+                        .text((d) => d.key)
 
-        viz.selectAll('.tencent')
-        .data(tencentData)
-        .enter()
-        .append('rect')
-        .attr('class', 'tencent')
-        .attr('x', (d) => xScale(d.time))
-        .attr('y', (d) => yScale(d.tag))
-        .attr('width', (2320-80)/24)
-        .attr('height', yScale.bandwidth())
-        .attr('opacity', .3)
-        .style('fill', colorMap[2])
+    // for (const key in biliTags) {
+    //     if (key !== 'total')
+    //     biliTags[key] = biliTags[key] / biliTags.total;
+    // }
 
+    // for (const key in youtubeTags) {
+    //     if (key !== 'total')
+    //     youtubeTags[key] = youtubeTags[key] / youtubeTags.total;
+    // }
+
+    // for (const key in biliTags) {
+    //     if (key !== 'total')
+    //     youtubeTags[key] = youtubeTags[key] / youtubeTags.total;
+    // }
+
+    delete biliTags['total']
+    const biliValues = Object.keys(biliTags).map((it) => biliTags[it])
+    console.log(biliValues)
+    const biliScale = d3.scaleLinear().domain([0, Math.max(...biliValues)]).range([100, 300]);
+
+    const biliChart = chart.append('g')
+                                .attr('class', 'bili');
+
+    biliChart.append('svg:image')
+                .attr('height', 100)
+                .attr('width', 200)
+                .attr('y', 350)
+                .attr('x', 5)
+                .attr('xlink:href', './assets/bilibili.png')
+    
+    const biliX = Object.keys(biliTags).reduce((prev, curr) => {
+        let temp = biliScale(biliTags[curr]);
+        if (prev) temp += prev[prev.length - 1];
+        prev.push(temp);
+        return prev
+    }, [0])
+    console.log(biliX)
+    biliChart.selectAll('rect')
+                    .data(d3.entries(biliTags))
+                    .enter()
+                    .append('rect')
+                        .attr('x', (d, i) => {
+                           return 250 + biliX[i] + padding*i
+                        })
+                        .attr('y', 300)
+                        .attr('width', (d) => {
+                            const w = biliScale(d.value);
+                            return w;
+                        })
+                        .attr('height', 200)
+                        .style('fill', colorMap[1])
+    
+    biliChart.selectAll('text')
+                    .data(d3.entries(biliTags))
+                    .enter()
+                    .append('text')
+                        .attr('x', (d, i) => {
+                            if (d.key === 'performance') return 250 + biliX[i] + padding*i + 10;
+                            return 250 + biliX[i] + padding*i + Math.floor(biliScale(d.value) / 3);
+                        })
+                        .attr('y', 400)
+                        .style('fill', 'white')
+                        .text((d) => d.key)
+ 
+// 
+        delete tencentTags['total']
+        const tencentValues = Object.keys(tencentTags).map((it) => tencentTags[it])
+        console.log(tencentValues)
+        const tencentScale = d3.scaleLinear().domain([0, Math.max(...tencentValues)]).range([100, 2400]);
+
+        const tencentChart = chart.append('g')
+                                    .attr('class', 'tencent');
+
+        tencentChart.append('svg:image')
+                    .attr('height', 100)
+                    .attr('width', 200)
+                    .attr('y', 550)
+                    .attr('x', 5)
+                    .attr('xlink:href', './assets/tencent.png')
+
+        const tencentX = Object.keys(tencentTags).reduce((prev, curr) => {
+            let temp = tencentScale(tencentTags[curr]);
+            if (prev) temp += prev[prev.length - 1];
+            prev.push(temp);
+            return prev
+        }, [0])
+        console.log(tencentX)
+        tencentChart.selectAll('rect')
+                        .data(d3.entries(tencentTags))
+                        .enter()
+                        .append('rect')
+                            .attr('x', (d, i) => {
+                            return 250 + tencentX[i] + padding*i
+                            })
+                            .attr('y', 550)
+                            .attr('width', (d) => {
+                                const w = tencentScale(d.value);
+                                return w;
+                            })
+                            .attr('height', 200)
+                            .style('fill', colorMap[2])
+
+        tencentChart.selectAll('text')
+                        .data(d3.entries(tencentTags))
+                        .enter()
+                        .append('text')
+                            .attr('x', (d, i) => {
+                                return 250 + tencentX[i] + padding*i + Math.floor(tencentScale(d.value) / 2);
+                            })
+                            .attr('y', 650)
+                            .style('fill', 'white')
+                            .text((d) => d.key)
 }
 
 taskSecond()
