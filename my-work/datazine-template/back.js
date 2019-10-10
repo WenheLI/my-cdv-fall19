@@ -5,12 +5,12 @@ const task = async () => {
                     .append('svg')
                         .attr('width', 940)
                         .attr('height', 735)
-                        .attr("transform", "translate(" + 10 + ", " + 10 + ")");
+                        .attr("transform", "translate(" + 10 + ", " + 50 + ")");
                         
     let data = await d3.json('data.json');
     data = data.filter((d) => {
         if (d.platform !== 'Bilibili') return true;
-        else if ( d.progress != 0) return true;
+        else if ( d.progress !== 0 ) return true;
         return false;
     });
     const timeDevotedMap = {
@@ -21,22 +21,20 @@ const task = async () => {
     let timeDevoted = [0, 0, 0];
 
     data.forEach((it) => {
-        timeDevoted[timeDevotedMap[it.platform]] += it.duration / 360;
+        timeDevoted[timeDevotedMap[it.platform]] += it.duration / 3600;
     });
-
+    console.log(timeDevoted)
     timeDevoted = timeDevoted.map((it) => Math.ceil(it))
     
-    const w = 300 / 25;
-    const h = 200 / 20;
+    const w = 800 / 25;
+    const h = 400 / 20;
 
     const d = [];
-    for (let i = 0; i < 55; i++) {
-        d.push(d3.range(55));
+    for (let i = 0; i < 25; i++) {
+        d.push(d3.range(25));
     }
 
-    viz.append('text')
-        .text('3 weeks time square-matrix (Each square represents 1-hour)')
-        .attr('transform', 'translate(' + 0 + ',' + 780 + ')')
+    
 
     const groups = viz.selectAll('g')
                         .data(d)

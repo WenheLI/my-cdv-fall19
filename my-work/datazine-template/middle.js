@@ -193,7 +193,7 @@ const taskSecond = async () => {
         tencentChart.append('svg:image')
                     .attr('height', 100)
                     .attr('width', 200)
-                    .attr('y', 550)
+                    .attr('y', 600)
                     .attr('x', 5)
                     .attr('xlink:href', './assets/tencent.png')
 

@@ -127,7 +127,7 @@ const task = async () => {
     const scatterChart = svg.append('g')
                                 .attr('class', 'scatter');
     
-    const xScale = d3.scaleLinear().domain([0, 11]).range([30, 800]);
+    const xScale = d3.scaleLinear().domain([0, 11]).range([65, 800]);
     const yScale = d3.scaleLinear().domain([0, 6]).range([50, 700]);
     
     const xAxis = d3.axisBottom(xScale)
@@ -147,7 +147,7 @@ const task = async () => {
     
     scatterChart.append('g')
                 .attr('class', 'axis')
-                .attr('transform', 'translate(' + 50 + ',' + 0 + ')')
+                .attr('transform', 'translate(' + 65 + ',' + 0 + ')')
                 .call(yAxis)
                 .call(g => g.select(".domain").remove());
     
