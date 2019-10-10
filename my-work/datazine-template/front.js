@@ -43,7 +43,7 @@ const task = async () => {
     textContainer.append('text')
                 .attr('transform', 'translate(' + -40 + ',' + 200 + ')')
                 .style('font-size', '22px')
-                .text('This chart collects 3-week')
+                .text('This chart collects 4-week')
 
     textContainer.append('text')
                 .attr('transform', 'translate(' + -40 + ',' + 225 + ')')
