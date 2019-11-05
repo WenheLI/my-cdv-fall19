@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Video Games</title>
+
+  <style>
+    .line {
+      stroke-dasharray: 1400;
+      stroke-dashoffset: 1400;
+      animation: dash 5s ease-in-out forwards infinite;
+    }
+
+    @keyframes dash {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+
+  <!--  -->
+
+  <!-- include the d3 library -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+
+</head>
+
+<body>
+
+  <div id="container">
+
+  </div>
+
+  <div id="buttons">
+    <button id="anime">Stop Anime</button>
+  </div>
+  <!-- our main script: -->
+  <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
