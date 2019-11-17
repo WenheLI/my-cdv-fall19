@@ -8,5 +8,5 @@ This sentence shows the what behinds a data/network. Since the network or say th
 
 > In the present, the extraction, refinement, use of data/oil pollutes the ground and air. It spills. ... It  enforces computational thinking upon us, driving the deep divisions in society ...
 
-It makes a perfect analog between the data and oil, where much extraction and usgae will lead to a negative influence on people/surroundings. 
+It makes a perfect analog between the data and oil, where much extraction and usgae will lead to a negative influence on people/surroundings. It points out the data is just like oil that it will help us for production and daily life. It is also like poison. In this case, without proper usage, it will place negative influence on oursleves, like the computational thinking. 
 
