@@ -1,173 +1,92 @@
+let w = 1200;
+let h = 800;
+let padding = 90
+
+const sum = (arr) => {
+    return arr.reduce((prev, curr) => {
+        return prev + curr
+    }, 0);
+}
+
 const main = async () => {
-    let stop = false;
+    let viz = d3.select("#container").append("svg")
+        .style("width", w)
+        .style("height", h);
+    let data = await d3.csv('./videogames.csv');
+    data = data.filter((it) => it['Year_of_Release'] !== 'N/A')
+        .filter((it) => it['Year_of_Release'] !== '2017')
+        .filter((it) => it['Year_of_Release'] !== '2020')
 
-    const data = await d3.csv("./videogames.csv");
-    const svg = d3.select("#container")
-        .append('svg')
-        .attr('width', 600)
-        .attr('height', 600);
-
-    let dateData = {};
-    // const jp = it['"JP_Sales"'];
-    // const eu = it['"EU_Sales"'];
-    data.forEach((it) => {
-        const year = it['Year_of_Release'];
-        const global = it['Global_Sales'];
-        if (year !== 'N/A' && year !== '2020' && year !== '2017' && year !== '2016') {
-            if (!dateData[year]) dateData[year] = parseFloat(global);
-            else dateData[year] += parseFloat(global);
-        }
-    });
-
-    dateData = Object.keys(dateData).map((it) => {
+    let salesData;
+    const years = Array.from(new Set(data.map((it) => it['Year_of_Release'])));
+    salesData = years.map((year) => {
         return {
-            year: d3.timeParse('%Y')(it),
-            sales: dateData[it]
+            year: d3.timeParse('%Y')(year),
+            sales: sum(
+                data.filter(d => d['Year_of_Release'] === year)
+                .map((it) => parseFloat(it['Global_Sales']))
+            )
         }
+    }).sort((a, b) => {
+        if (a.year < b.year) return 1
+        else return -1;
     });
-
-
-    let dateDataNA = {};
-    // const jp = it['"JP_Sales"'];
-    // const eu = it['"EU_Sales"'];
-    data.forEach((it) => {
-        const year = it['Year_of_Release'];
-        const global = it['NA_Sales'];
-        if (year !== 'N/A' && year !== '2020' && year !== '2017' && year !== '2016') {
-            if (!dateDataNA[year]) dateDataNA[year] = parseFloat(global);
-            else dateDataNA[year] += parseFloat(global);
-        }
-    });
-
-    dateDataNA = Object.keys(dateDataNA).map((it) => {
-        return {
-            year: d3.timeParse('%Y')(it),
-            sales: dateDataNA[it]
-        }
-    });
-
-    let dateDataJP = {};
-
-    // const eu = it['"EU_Sales"'];
-    data.forEach((it) => {
-        const year = it['Year_of_Release'];
-        const global = it['JP_Sales'];
-        if (year !== 'N/A' && year !== '2020' && year !== '2017' && year !== '2016') {
-            if (!dateDataJP[year]) dateDataJP[year] = parseFloat(global);
-            else dateDataJP[year] += parseFloat(global);
-        }
-    });
-
-    dateDataJP = Object.keys(dateDataJP).map((it) => {
-        return {
-            year: d3.timeParse('%Y')(it),
-            sales: dateDataJP[it]
-        }
-    });
-
-    let dateDataEU = {};
-
-    data.forEach((it) => {
-        const year = it['Year_of_Release'];
-        const global = it['EU_Sales'];
-        if (year !== 'N/A' && year !== '2020' && year !== '2017' && year !== '2016') {
-            if (!dateDataEU[year]) dateDataEU[year] = parseFloat(global);
-            else dateDataEU[year] += parseFloat(global);
-        }
-    });
-
-    dateDataEU = Object.keys(dateDataEU).map((it) => {
-        return {
-            year: d3.timeParse('%Y')(it),
-            sales: dateDataEU[it]
-        }
-    });
-
-
-    let xDomain = d3.extent(dateData, function (d) {
+    let xDomain = d3.extent(salesData, function (d) {
         return d.year
     });
-    let xScale = d3.scaleTime().domain(xDomain).range([50, 550]);
+    let xScale = d3.scaleTime().domain(xDomain).range([padding, w - padding]);
     let xAxis = d3.axisBottom(xScale);
-    let xAxisGroup = svg.append("g")
+    let xAxisGroup = viz.append("g")
         .attr("class", "xaxisgroup")
-        .attr("transform", "translate(0," + (550) + ")");
+        .attr("transform", "translate(0," + (h - padding) + ")");
     xAxisGroup.call(xAxis);
 
-    let yMax = d3.max(dateData, function (d) {
+    let yMax = d3.max(salesData, function (d) {
         return d.sales;
     })
     let yDomain = [0, yMax];
-    let yScale = d3.scaleLinear().domain(yDomain).range([550, 50]);
+    let yScale = d3.scaleLinear().domain(yDomain).range([h - padding, padding]);
     let yAxis = d3.axisLeft(yScale);
-    let yAxisGroup = svg.append("g")
+    let yAxisGroup = viz.append("g")
         .attr("class", "yaxisgroup")
-        .attr("transform", "translate(" + (50 / 2) + ",0)");
+        .attr("transform", "translate(" + (padding / 2) + ",0)");
     yAxisGroup.call(yAxis);
 
     const lineMaker = d3.line()
-        .x((d) => xScale(d.year))
+        .x((d) => {
+            return xScale(d.year)
+        })
         .y((d) => yScale(d.sales));
 
-
-    console.log(dateData)
-    svg.selectAll(".global").data([dateData])
+    viz.selectAll(".global").data([salesData])
         .enter()
         .append("path")
         .attr('class', 'line global')
         .attr("d", lineMaker)
         .attr('stroke', 'aqua')
         .attr('stroke-width', '5px')
-        .style('fill', 'none')
-
-
-
-    svg.selectAll(".na").data([dateDataNA])
-        .enter()
-        .append("path")
-        .attr('class', 'line na')
-        .attr("d", lineMaker)
-        .attr('stroke', 'blue')
-        .attr('stroke-width', '5px')
         .style('fill', 'none');
 
-
-    svg.selectAll(".jp").data([dateDataJP])
+    viz.selectAll('.point').data(salesData)
         .enter()
-        .append("path")
-        .attr('class', 'line jp')
-        .attr("d", lineMaker)
-        .attr('stroke', 'red')
-        .attr('stroke-width', '5px')
-        .style('fill', 'none')
-
-    svg.selectAll(".eu").data([dateDataEU])
-        .enter()
-        .append("path")
-        .attr('class', 'line eu')
-        .attr("d", lineMaker)
-        .attr('stroke', 'green')
-        .attr('stroke-width', '5px')
-        .style('fill', 'none');
-
-
-    document.getElementById("anime").addEventListener("click", () => {
-        if (!stop) {
-            Array.from(document.getElementsByClassName('line')).forEach((it) => {
-                it.setAttribute('class', it.className.baseVal.split(" ").filter((it) => it !== 'line')[0] + ' noline') 
-            });
-            document.getElementById("anime").innerText = 'Start Anime';
-        } else {
-            Array.from(document.getElementsByClassName('noline')).forEach((it) => {
-                it.setAttribute('class', it.className.baseVal.split(" ").filter((it) => it !== 'noline')[0] + ' line') 
-            });
-            document.getElementById("anime").innerText = 'Stop Anime';
-        }
-
-        stop = !stop;
-    });
-
-
+        .append('circle')
+        .attr('class','point')
+        .attr('cx', (d) => xScale(d.year))
+        .attr('cy', (d) => yScale(d.sales))
+        .attr('r', (d) => 5)
+        .style('fill', 'black')
+        .on('mouseenter', function (d) {
+            d3.select(this)
+             .transition()
+             .style('fill', 'orange')
+             .attr('r', 10);
+        })
+        .on('mouseleave', function (d) {
+            d3.select(this)
+             .transition()
+             .style('fill', 'black')
+             .attr('r', 5)
+        })
 
 }
 
