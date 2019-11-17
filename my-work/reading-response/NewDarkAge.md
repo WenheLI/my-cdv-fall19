@@ -1,6 +1,6 @@
 > Information and violence are utterly and inextricably linked, and the weaponisation of information is accelerated by technologies that purport to assert control over the world.
 
-This sentence reminds me that the information is not limited to commericial usgae. Previously, when I heard the word information, what comes into my mind is to use information to do merchandise and customers' analysis. However, this article brings me back to the real that the data/information could be used in different ways.
+This sentence reminds me that the information is not limited to commericial usgae. Previously, when I heard the word information, what comes into my mind is to use information to do merchandise and customers' analysis. However, this article brings me back to the real that the data/information could be used in different ways. Also, from another perspective, whether the information is good or not depends on the users. Will the information becomes a weapon or a helpful tool? It is a question for all of us.
 
 > The subsea cables girding South America are owned by corportations based in Madrid, even as countries there struggle to control their own oil profits.
 
