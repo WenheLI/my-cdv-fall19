@@ -85,7 +85,7 @@ const main = async () => {
             d3.select(this)
              .transition()
              .style('fill', 'black')
-             .attr('r', 5)
+             .attr('r', 5);
         })
 
 }
