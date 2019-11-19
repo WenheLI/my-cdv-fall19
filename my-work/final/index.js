@@ -107,7 +107,7 @@ const main = async () => {
         })
         .on('mouseleave', function (d) {
             viz.selectAll('.selectedArea').remove();
-
+            textArea.innerHTML = '';
             viz.selectAll('.animatedLine')
                 .transition()
                 .duration(1000)
